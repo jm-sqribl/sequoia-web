@@ -1,0 +1,29 @@
+<card [title]="'Basic Checkbox'">
+  <md-checkbox>
+    Checkbox
+  </md-checkbox>
+</card>
+
+<card [title]="'Indeterminate Checkboxes'">
+  <md-checkbox [checked]="false" [indeterminate]="isIndeterminate" (change)="isIndeterminate = false">
+    Click the Button Below to Make Me Indeterminate.
+  </md-checkbox>
+  <div class="clearfix"></div>
+  <button md-raised-button color="accent" (click)="isIndeterminate = true">Make Indeterminate</button>
+</card>
+
+<card [title]="'Alignment'">
+  <md-checkbox>
+    Checkbox
+  </md-checkbox>
+  <div class="clearfix"></div>
+  <md-checkbox labelPosition="before" [checked]="true">
+    Checkbox
+  </md-checkbox>
+</card>
+
+<card [title]="'Theming'" class="mb-0">
+  <md-checkbox [checked]="true" color="primary">
+    I come after my label.
+  </md-checkbox>
+</card>

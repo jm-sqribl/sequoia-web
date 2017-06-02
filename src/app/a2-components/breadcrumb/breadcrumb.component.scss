@@ -1,0 +1,177 @@
+@import '../../../assets/sass/variable';
+
+:host {
+  display: block;
+
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a,
+      .static {
+        .icon {
+          font-size: 1rem;
+          margin-right: 6px;
+        }
+      }
+      .separator {
+        color: rgba(#000,.4);
+        margin: 0 $module/2;
+      }
+    }
+    &.custom-1 {
+      margin: -2px -7px;
+
+      li {
+        margin: 2px 7px;
+
+        a,
+        .static {
+          background: main-color(A100);
+          border-color: main-color(A100);
+          color: #fff;
+          display: inline-block;
+          height: 36px;
+          padding: 5px $module;
+          position: relative;
+          transition:
+            background .2s $animation,
+            color .2s $animation;
+          vertical-align: top;
+
+          &:before,
+          &:after {
+            border-style: solid;
+            border-color: transparent;
+            content: '';
+            display: block;
+            height: 0px;
+            position: absolute;
+            top: 0px;
+            transition: border-color .2s $animation;
+            width: 0px;
+          }
+          &:before {
+            border-width: 36px 10px 0 0;
+            border-right-color: inherit;
+            left: -10px;
+          }
+          &:after {
+            border-width: 0 0 36px 10px;
+            border-left-color: inherit;
+            right: -10px;
+          }
+        }
+        a {
+          &:hover {
+            background: #fff;
+            border-color: #fff;
+            color: main-color(A100);
+          }
+        }
+        .static {
+          opacity: .6;
+        }
+        .separator {
+          display: none;
+        }
+        &:first-child {
+          a,
+          .static {
+            &:before {
+              display: none;
+            }
+          }
+        }
+        &:last-child {
+          a,
+          .static {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &.custom-2 {
+      margin: -2px -7px;
+
+      li {
+        margin: 2px 7px;
+
+        a,
+        .static {
+          background: main-color(A100);
+          border-color: main-color(A100);
+          color: #fff;
+          display: inline-block;
+          height: 36px;
+          padding: 5px $module;
+          position: relative;
+          transition:
+            background .2s $animation,
+            color .2s $animation;
+          vertical-align: top;
+
+          &:before,
+          &:after {
+            border-style: solid;
+            border-color: transparent;
+            content: '';
+            display: block;
+            height: 0px;
+            position: absolute;
+            top: 0px;
+            transition: border-color .2s $animation;
+            width: 0px;
+          }
+          &:before {
+            border-width: 18px 0 18px 10px;
+            border-top-color: inherit;
+            border-bottom-color: inherit;
+            left: -10px;
+          }
+          &:after {
+            border-width: 18px 0 18px 10px;
+            border-left-color: inherit;
+            right: -10px;
+          }
+        }
+        a {
+          &:hover {
+            background: #fff;
+            border-color: #fff;
+            color: main-color(A100);
+          }
+        }
+        .static {
+          opacity: .6;
+        }
+        .separator {
+          display: none;
+        }
+        &:first-child {
+          a,
+          .static {
+            &:before {
+              display: none;
+            }
+          }
+        }
+        &:last-child {
+          a,
+          .static {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../../assets/sass/variable';
+
+:host {
+  background: main-color(300);
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+
+  card {
+    margin: 0;
+    max-width: 400px;
+
+    /deep/ .card-wrap {
+      border: 0;
+    }
+    .material-icons {
+      color: main-color(300);
+      font-size: 100px;
+    }
+    .additional-info {
+      background: rgba(#000,.1);
+      margin: $module (-$module) (-$module);
+      padding: $module/2 $module;
+    }
+  }
+}

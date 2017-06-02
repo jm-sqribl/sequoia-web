@@ -1,0 +1,28 @@
+@import '../../../assets/sass/variable';
+
+:host {
+  align-items: center;
+  background: rgba(#000,.1);
+  display: flex;
+  font-size: .8rem;
+  height: $module * 2;
+  justify-content: space-between;
+  @media #{$max543} {
+    font-size: .7rem;
+  }
+
+  .copyright,
+  .version {
+    padding: 10px 22px;
+  }
+  .copyright {
+    @media #{$max543} {
+      padding-right: 0;
+    }
+  }
+  .version {
+    @media #{$max543} {
+
+    }
+  }
+}

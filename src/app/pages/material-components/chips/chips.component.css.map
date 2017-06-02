@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,wBAAU;EACR,MAAM,EAAE,GAAG;EACX,SAAS,EAAE,KAAK",
+"sources": ["chips.component.scss"],
+"names": [],
+"file": "chips.component.css"
+}

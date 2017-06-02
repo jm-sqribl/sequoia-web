@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,4BAAU;EACR,MAAM,EAAE,IAAI;;AAId,mBAAM;EACJ,MAAM,EAAE,GAAG",
+"sources": ["badge.component.scss"],
+"names": [],
+"file": "badge.component.css"
+}
